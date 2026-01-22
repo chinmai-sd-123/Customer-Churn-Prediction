@@ -7,8 +7,8 @@ from app.schemas import CustomerInput
 
 app = FastAPI(title="Bank Customer Churn Prediction ")
 
-model = load_model("models/churn_ann_model.h5", compile=False)
-scaler = joblib.load("models/scaler.pkl")
+model = load_model("Models/churn_ann_model.h5", compile=False)
+scaler = joblib.load("Models/scaler.pkl")
 
 FEATURE_ORDER= [
     'CreditScore',
